@@ -1,0 +1,9 @@
+{
+  "name": "imqianduan",
+  "version": "1.0.0",
+  "description": "我是前端",
+  "author": "懒了就炖了 <master@imqianduan.com>",
+  "license": "MIT",
+  "main": "./main.js",
+  "dependencies": {}
+}

@@ -1,0 +1,51 @@
+{
+  "build": {
+    "productName": "我是前端",
+    "appId": "com.electron.imqianduan-com-app",
+    "copyright": "Copyright © 2018 IMQIANDUAN.COM",
+    "files": [
+      "./**/*"
+    ],
+    "directories": {
+      "output": "./dist",
+      "app": "./app",
+      "buildResources":"./build"
+    },
+    "win":{
+      "target":"nsis"
+    },
+    "nsis":{
+      "oneClick":false,
+      "perMachine":true,
+      "allowToChangeInstallationDirectory":true,
+      "installerIcon":"icon/installer.ico",
+      "uninstallerIcon":"icon/uninstaller.ico"
+    },
+    "mac":{
+
+    },
+    "linux":{
+
+    }
+  },
+  "scripts": {
+    "start": "electron ./app/index.html",
+    "dev": "electron --inspect=5858 ./app/index.html",
+    "packager": "electron-packager ./app Imqianduan --out ./dist --appVersion 1.0.0 --overwrite",
+    "build:dir": "electron-builder --dir",
+    "build": "electron-builder"
+  },
+  "repository": "",
+  "keywords": [
+    "Electron",
+    "quick",
+    "start",
+    "tutorial",
+    "demo"
+  ],
+  "devDependencies": {
+    "electron": "^3.0.7",
+    "electron-builder": "^20.38.2",
+    "electron-packager": "^12.2.0"
+  }
+}
