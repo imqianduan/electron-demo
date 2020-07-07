@@ -44,7 +44,7 @@
     "demo"
   ],
   "devDependencies": {
-    "electron": "^3.0.7",
+    "electron": "^9.1.0",
     "electron-builder": "^20.38.2",
     "electron-packager": "^12.2.0"
   }
